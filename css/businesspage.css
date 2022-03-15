@@ -1,0 +1,45 @@
+ #theimage img{ height: 520px;
+   margin-left: 20px; }
+  #box1 h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700px;
+    color: #DF744A; }
+  #box1 h2,h4 {
+    color:#f4a261;
+      margin: 15px 0 0 0;
+      font-size: 26px;}
+    #box1 form{
+      padding:1rem;
+      margin: 1.5rem;
+      margin-top: 0;}
+  #box1 form #pass{
+    margin-bottom: 16px;}
+  .bttn{
+    margin-top: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+  .submit{
+      margin-bottom: 8px;
+      background-color:#4154f1;
+      color: white;
+      display: inline-block;
+      border: transparent!important;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 12px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      line-height: 1;
+      margin: 10px;
+    width: 50%;} 
+  .submit:hover{
+    background-color: #778eeb;
+    color: black;
+    font-size: 17px;}

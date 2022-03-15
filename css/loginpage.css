@@ -1,0 +1,228 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: auto;
+  background-image: url("../images/backgroundlogin.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.container {
+  width: 700px;
+  background-color: rgba(255, 248, 220, 0.192);
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  align-items: center;
+  height: auto;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text .centered {
+  animation: zoomIn;
+  animation-duration: 1.5s;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  width: 60%;
+}
+form {
+  padding: 1rem;
+  margin-top: 1px;
+  margin-bottom: 0;
+  height: auto;
+}
+
+#floatingconfirmPassword {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/*============terms link style=====*/
+.partcheck p {
+  margin-bottom: 0px;
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: 600;
+}
+.partcheck a {
+  text-decoration: none;
+  color: #835c3b;
+}
+.partcheck a:hover {
+  text-decoration: none;
+  padding-left: 10px;
+  color: #835c3b;
+}
+.terms {
+  text-decoration: none;
+  color: #835c3b;
+  font-weight: 500;
+}
+.terms:hover {
+  text-decoration: none;
+  color: #202d45;
+}
+.partcheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+/*===pop up===*/
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  transition: 0.64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: 87%;
+  padding-top: 0px;
+  background-color: #fff;
+  transform: rotate(32deg);
+  transition: 0.64s ease-in-out;
+}
+@media only screen and (max-width: 700px) {
+  .popup {
+    width: 99%;
+  }
+  .popup-inner {
+    width: 100vw;
+    height: 95vh;
+    margin-left: 0;
+  }
+  .popuptext h1 {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+  }
+  .popuptext p {
+    font-size: 0.3rem;
+    line-height: 0.5;
+  }
+}
+.popuptext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+.popuptext h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #df744a;
+}
+.popuptext p {
+  font-size: 0.875rem;
+  color: #686868;
+  line-height: 1.5;
+}
+.popuptext a {
+  text-decoration: none;
+  color: #47bdff;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+.closepopup {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #47bdff;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*==========sign up button style===========*/
+.bttn {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign {
+  margin-bottom: 5px;
+  background-color: #202d45;
+  color: white;
+  display: inline-block;
+  border: transparent !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  width: 50%;
+}
+.sign:hover {
+  background-color: #738dbe;
+  color: black;
+  font-size: 17px;
+}
+.bttn p {
+  margin-bottom: 0px;
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: 600;
+}
+.bttn a {
+  text-decoration: none;
+  color: #835c3b;
+}
+.bttn a:hover {
+  padding-left: 10px;
+}
